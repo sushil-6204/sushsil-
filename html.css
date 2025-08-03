@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushil Gautam | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sushil Gautam</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    
+    <!-- Profile Image -->
+    <img src="profile.webp" alt="Sushil Gautam Profile Photo" width="200" style="border-radius: 50%;">
+
+    <p>Hello! I'm <strong>Sushil Gautam</strong>, a web designer and developer who’s passionate about turning simple ideas into responsive, visually engaging websites. I enjoy working at the intersection of clean design and functional code. Whether it’s building a personal portfolio or a client website, I always aim to create user-friendly and accessible experiences. My focus is on front-end development, and I’m constantly learning and experimenting to stay ahead with modern web trends and tools.</p>
+
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="filter-buttons">
+      <button onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('web')">Web</button>
+      <button onclick="filterProjects('uiux')">UI/UX</button>
+    </div>
+
+    <div class="project-gallery">
+      <div class="project-card" data-category="web">
+        <img src="web1.png" alt="Web Project 1">
+        <h3>Portfolio Landing Page</h3>
+      </div>
+
+      <div class="project-card" data-category="uiux">
+        <img src="uiux1.png" alt="UI/UX Project 1">
+        <h3>Mobile App UI Redesign</h3>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <img src="web2.png" alt="Web Project 2">
+        <h3>Responsive Blog Website</h3>
+      </div>
+
+      <div class="project-card" data-category="uiux">
+        <img src="uiux2.png" alt="UI/UX Project 2">
+        <h3>E-commerce UI Concept</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
